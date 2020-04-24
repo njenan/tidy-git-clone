@@ -6,7 +6,7 @@ By default TGC clones into $HOME/git and then organizes repos by host and subpat
 
 # Installation
 ```
-git clone https://git.nathanjenan.me/njenan/tidy-git-clone.git
+git clone https://github.com/njenan/tidy-git-clone.git
 cd tidy-git-clone
 make install
 ```
