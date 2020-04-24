@@ -21,5 +21,5 @@ tidy-git-clone example/repo/path.git
 # License
 Tidy Git Clone is licensed under the terms of GPL-2.0
 
-See LICENSE for details.
+See [LICENSE](./LICENSE) for details.
 
