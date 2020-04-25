@@ -3,6 +3,8 @@ Tidy Git Clone (TGC) is a tool to clone git repos to a consistent directory (bas
 
 By default TGC clones into $HOME/git and then organizes repos by host and subpath.  For example, the git repo `https://examplegithost.com/somedomain/somerepo.git` would be cloned into the folder `$HOME/git/src/examplegithost.com/somedomain/somerepo`.
 
+This can be overwritten by specifiying a TIDY_GIT_HOME directory.
+
 
 # Installation
 ```
