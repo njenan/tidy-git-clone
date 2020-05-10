@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 import os
+import sys
 import argparse
 import subprocess
 from urllib.parse import urlparse
@@ -8,7 +9,7 @@ from pathlib import Path
 
 
 base_path = os.environ.get('TIDY_GIT_HOME')
-if base_path == '':
+if base_path is None:
     base_path = '$HOME/git/src/'
 
 parser = argparse.ArgumentParser(description="Clone git repo into a tidy path.")
@@ -18,6 +19,10 @@ args = parser.parse_args()
 
 uri = args.repo
 result = urlparse(uri)
+
+if result is None:
+    print("unable to parse url " + uri, file=sys.stderr)
+    sys.exit(1)
 
 
 split = result.path.split("/")
